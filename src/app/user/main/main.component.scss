@@ -8,6 +8,7 @@
     transition: all .5s ease;
     background: #f4f7fa;
     padding: 3rem;
+    overflow: hidden;
 }
 
 .body-trimmed{
@@ -18,4 +19,8 @@
 .body-md-screen{
     width: calc(100% - 5rem);
     margin-left: 5rem;
+}
+
+@media screen {
+    
 }

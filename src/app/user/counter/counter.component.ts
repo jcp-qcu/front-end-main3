@@ -8,23 +8,10 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 export class CounterComponent implements OnInit {
 
 
+    str: string = '';
+
     constructor() { }
   
     ngOnInit(): void {
-    }
-  
-    count: number = 0;
-    counter(action:string){
-      if(action === '+')
-      {
-        this.count++;
-      }
-      else if(action === '-')
-      {
-        this.count--;
-      }
-      else{
-        this.count = 0;
-      }
     }
   }

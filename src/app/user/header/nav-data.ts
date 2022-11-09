@@ -21,4 +21,10 @@ export const navbarData = [
         icon: 'fa fa-calculator',
         label: 'Counter',
     },
+
+    {
+        routeLink: './login',
+        icon: 'fas fa-sign-out-alt',
+        label: 'Logout',
+    },
 ];
