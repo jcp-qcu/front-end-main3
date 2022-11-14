@@ -5,7 +5,18 @@
 export const environment = {
   production: false,
   //backendAPI: "https://localhost:7148"
-  backendAPI: "https://bionic-backend.herokuapp.com"
+  backendAPI: "https://bionic-backend.herokuapp.com",
+  firebaseConfig : {
+    apiKey: 'AIzaSyCRDMrr9fhO9hH1_OFmlv-BOzfsmy8D3Sg',
+    authDomain: 'bionicwebapp.firebaseapp.com',
+    databaseURL:
+      'https://bionicwebapp-default-rtdb.asia-southeast1.firebasedatabase.app',
+    projectId: 'bionicwebapp',
+    storageBucket: 'bionicwebapp.appspot.com',
+    messagingSenderId: '49326962456',
+    appId: '1:49326962456:web:ff333abe85c26c53d6506d',
+    measurementId: 'G-H9G63HPD7M',
+  }
 };
 
 // For PDF TO HTML

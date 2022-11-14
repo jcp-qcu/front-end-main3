@@ -1,26 +1,38 @@
 //LOGIN
-  .component-login{
+  
+
+//LOGIN FORM
+  .form-box {
+    background: rgba(255, 255, 251, 0.24);
+    border-radius: 98px;
+    padding: 40px;
+    box-shadow: 0 0 1px  rgba(250, 178, 83, 0.24);
     width: 400px;
-    height: 600px;
+    height: 514px;
+    right: 0;
   }
-  
+  .left_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .child_div_7{
-    /*Float Left*/
-    float: right;
-    margin-right: 8%;
-    margin-top: 4%;
+    width: 50%;
   }
-  
+
   .child_div_6{
-   
-    /*Float Left*/
-    float: left;
-    margin-left: 8%;
-    margin-top: 3%; 
+    width: 50%;
   }
-  
+
+  .child_content{
+    display: flex;
+    margin-top:120px;
+    margin-bottom:150px;
+  }
+
   .img {
     position: absolute;
+
   }
   .imgR{
     z-index: 1;
@@ -31,29 +43,24 @@
   .imgB{
     z-index: 3;
     top: 50%;
-    left: 8%;
+    left: 15%;
   }
 
+.imgW{
+    z-index: -1;
+    top: 50%;
   
-  .mat-icon-button {
-    color: black !important;
-  }
-  .mat-icon{
-    color: black !important;
-  }
-  
-  
-  
-//LOGIN FORM
-  .form-box {
-    background: rgba(255, 255, 251, 0.24);
-    border-radius: 98px;
-    padding: 40px;
-    box-shadow: 0 0 1px  rgba(250, 178, 83, 0.24);
-    width: 400px;
-    height: 514px;
   }
 
+
+  .link{
+    text-align: center;
+  }
+  .link a{
+      color:#F37C0E;
+      text-decoration: UNDERLINE; 
+    }
+    
   .form-box .header-text {
 
     padding-bottom: 30px;
@@ -144,11 +151,30 @@
   @media screen and (max-width: 600px) { 
      
   .child_div_7{
-    /*Float Left*/
+    
     float: right;
     margin-right: 8%;
     margin-top: 30%;
   }
   
-  
+  .img {
+    position: absolute;
+    visibility: hidden;
+    display: none;
   }
+  .imgW{
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+
+  }
+
+
+
+  //footer
+
+
+
+
+

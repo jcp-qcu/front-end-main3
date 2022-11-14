@@ -1,0 +1,109 @@
+<div class="component-main">
+    <div class="container center">
+      <div class="box left center">
+        <img src="../../assets/images/newway.png" alt="" class="img imgW" />
+        <img class="img imgB" src="/assets/images/B.png" alt="" />
+        <img class="img imgR" src="/assets/images/Rectangle 66.png" alt="" />
+      </div>
+      <div class="box right center">
+        <form action="[action]=" url>
+          <div class="header">
+            <h1>Register</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <p></p>
+          </div>
+  
+          <div class="mb-3 mt-3 input-data">
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              autocomplete="off"
+              [(ngModel)] = "fullName"
+              required
+            />
+            <div class="underline"></div>
+            <label for="fullName">Full Name</label>
+          </div>
+  
+          <div class="mb-3 mt-3 input-data">
+            <input
+              type="text"
+              pattern=" "
+              id="email"
+              name="email"
+              autocomplete="off"
+              [(ngModel)] = "email"
+              required
+            />
+            <div class="underline"></div>
+            <label for="email">Email</label>
+          </div>
+  
+          <div [formGroup] = "profileForm">
+            <div class="mb-3 mt-3 input-data">
+              <input
+                type="text"
+                pattern=" "
+                id="email"
+                name="email"
+                autocomplete="off"
+                [(ngModel)] = "email"
+                matInput [type]="hide ? 'password':'text'"
+                formControlName="cPassword"
+                required
+              />
+              <button class="btn_eye"
+                mat-icon-button
+                matSuffix
+                (click)="hide = !hide"
+                [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide"
+            > 
+              <mat-icon class="btn_eye">{{ hide ? "visibility_off" : "visibility" }}</mat-icon>  Show Password
+            </button>
+              <div class="underline"></div>
+              <label for="email">Password</label>
+            </div>
+            <div class="mb-3 mt-3 input-data">
+              <input
+                type="text"
+                pattern=" "
+                id="email"
+                name="email"
+                autocomplete="off"
+                [(ngModel)] = "email"
+                matInput [type]="hide ? 'password':'text'"
+                formControlName="cPassword"
+                required
+              />
+              <button class="btn_eye"
+                mat-icon-button
+                matSuffix
+                (click)="hide = !hide"
+                [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide"
+            > 
+              <mat-icon class="btn_eye">{{ hide ? "visibility_off" : "visibility" }}</mat-icon>  Show Password
+            </button>
+              <div class="underline"></div>
+              <label for="email">Password</label>
+            </div>
+            <div *ngIf="passwordMatchError">
+              Password does not match
+            </div>
+          </div>
+  
+          <div class="form-check mb-3 mx-4">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember" />
+              Remember me
+            </label>
+          </div>
+          <div class="center">
+            <button type="submit" class="btn submit" routerLink="../pricing">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 7%;
+  }
+  .box {
+    box-shadow: 1px 2px 10px black;
+    width: 1193px;
+    height: 670px;
+    border-radius: 82px;
+  }
+  
+  .header h1 {
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .header p {
+    color: white;
+  }
+  
+  .img {
+    position: absolute;
+  }
+  .imgR {
+    z-index: 1;
+    top: 40%;
+    left: 15%;
+  }
+  
+  .imgB {
+    z-index: 3;
+    top: 50%;
+    left: 8%;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    position: relative;
+    background-color: #1f1d1d;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    width: 40%;
+  }
+  .right {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    background-color: rgba(255, 255, 251, 0.24);
+    width:60%;
+  }
+  .input-data {
+    height: 40px;
+    width: 500px;
+    position: relative;
+  }
+  .input-data input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .input-data input:focus ~ label,
+  .input-data input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #f37c0e;
+  }
+  .input-data label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: lightgray;
+    pointer-events: none;
+    transition: all 0.5s ease;
+  }
+  .input-data .underline {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+  }
+  .input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #f37c0e;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+  }
+  .input-data input:focus ~ .underline:before,
+  .input-data input:valid ~ .underline:before {
+    transform: scaleX(1);
+  }
+  
+  .submit {
+    background-color: rgba(12, 11, 11, 0.24);
+    box-shadow: 1px 1px 6px black;
+    color: white;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 152.31px;
+    height: 45px;
+    font-weight: bold;
+    font-size: medium;
+  }
+  
+  .submit:hover {
+    background-color: #f37c0e;
+    color: white;
+    text-shadow: 1px 2px 10px white;
+  }
+  
+  @media (max-width: 1200px) {
+    html {
+      font-size: 55%;
+    }
+    .right {
+      background-color: rgba(255, 255, 251, 0.24);
+    }
+    .imgW{
+      width: 250px;
+    }
+    .imgB{
+      width: 100px;
+      left: 45%;
+      top: 55%;
+    }
+    .imgR{
+      width: 150px;
+      left: 45%;
+      top: 55%;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .right {
+      background-color: rgba(255, 255, 251, 0.24);
+    }
+    .input-data {
+      height: 40px;
+      width: 300px;
+      position: relative;
+    }
+    
+  }
+  
+  @media (max-width: 768px) {
+    .right {
+      background-color: rgba(255, 255, 251, 0.24);
+      width:100%;
+      border-radius: 82px;
+      margin: 0 20px;
+    }
+    .left{
+      display: none;
+    }
+    .input-data {
+      height: 40px;
+      width: 300px;
+      position: relative;
+    }
+  }
+  

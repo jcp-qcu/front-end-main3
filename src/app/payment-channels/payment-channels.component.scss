@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background-image: url('/assets/images/IMAGE-BG.png');
+    background-size: cover;
+    padding-bottom: 70px;
+   
+}
+.container form{
+    padding: 20px;
+    width: 700px;
+    background-color: #333430;
+    box-shadow: 0, 5px, 10px  rgba(0, 0, 0, 0.1);
+    color: white;
+}
+.container form .row .col .title{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.container form .row .col .inputBox{
+    margin: 15px 0;
+}
+.container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+}
+.container form .row .col .inputBox input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+    background: transparent;
+    color:white;
+}
+.container form .row .col .inputBox input:focus{
+    outline: none;
+}
+.container form .row .col .flex{
+    display: flex;
+    gap: 15px;
+}
+.container form .row .col .flex .inputBox{
+    margin-top: 5px;
+}
+.container form .row .col .inputBox img{
+    width: 335px;
+    filter: drop-shadow(0 0 1px #000);
+}
+.container form .submit-btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #f37c0e;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.container form .submit-btn:hover{
+    background: #f37c0e;
+}
+
+
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: #f37c0e;
+}
+.inputBox label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: lightgray;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+.inputBox .underline {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+}
+
+.inputBox .card{
+    height:136px;
+}
+
+.inputBox .underline:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #f37c0e;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before {
+  transform: scaleX(1);
+}

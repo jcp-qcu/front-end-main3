@@ -36,68 +36,19 @@ $bionic-web-app-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
-html, body { height: 100%; }
-body { 
-  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
-  background: var(--black);
+
+
+:root{
+  --purple:#814096;
+  --orange:#F37C0E;
+  --gradient:linear-gradient(90deg, var(--purple), var(--orange));
+  --white:#FFF;
 }
 
-:root {
-  --orange: #f37c0e;
-  --gray: #333430;
-  --white: #ffffff;
-  --darkbrown: #312d2d;
-  --black:#1F1D1D;
+body{
+  background: black;
 }
 
 a{
   text-decoration: none;
-  color: white !important;
-  padding: 30px;
-  font-family: IM FELL Double Pica;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0em;
-  text-align: left;
 }
-
-.inter_font_b{
-  font-size: 40px;
-}
-
-.inter_font_m{
-  font-size: 24px;
-}
-
-.inter_font_s{
-  font-size: 16px;
-}
-.component-main {
-  height: 100vh;
-  width: 100%;
-  background-image: url('/assets/images/IMAGE-BG.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: var(--white);
-}
-.converter-menu{
-  background-color: var(--darkbrown);
-  width: 650px;
-  height: 400px;
-  text-align: center;
-}
-
-html, body { 
-  height: 100%; 
-
-}
-body { 
-  margin: 0; 
-  font-family: Roboto, "Helvetica Neue", sans-serif; 
-}
-
-.full-width{
-  width: 100% !important;
-}
-
